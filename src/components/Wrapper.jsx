@@ -2,16 +2,18 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import { Outlet } from 'react-router-dom';
 import useDynamicTitle from '../hooks/useDynamicTitle.js';
+import DefaultHelmet from './DefaultHelmet';
 
 function Wrapper() {
-  useDynamicTitle("ANIVERSE");
+  useDynamicTitle("Mridul Narula | Developer Portfolio");
   return (
-      <>
+    <>
+      <DefaultHelmet />
       <Navbar />
       <Outlet />
       <Footer />
-      </>
-  )
+    </>
+  );
 }
 
-export default Wrapper
+export default Wrapper;
