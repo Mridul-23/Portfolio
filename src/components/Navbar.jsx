@@ -1,4 +1,3 @@
-// src/components/Navbar.jsx
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -14,6 +13,17 @@ const NAV_LINKS = [
   { label: 'Contact', path: '/contact' },
 ];
 
+const listVariants = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.08 }
+  }
+};
+const itemVariants = {
+  hidden: { opacity: 0, y: -10 },
+  visible: { opacity: 1, y: 0 }
+};
+
 export default function Navbar() {
   const { pathname } = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -22,20 +32,34 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50">
-      <div className=" px-6 md:px-8 h-16 flex items-center">
-        <Link
-          to="/"
-          className="text-2xl font-mono font-bold text-white hover:text-cyan-400 transition-colors"
-          onClick={handleClose}
+      <div className="px-6 md:px-8 h-16 flex items-center">
+        <motion.div
+          whileHover={{ scale: 1.1, rotate: -1 }}
+          transition={{ type: 'spring', stiffness: 300 }}
         >
-          Mridul
-        </Link>
+          <Link
+            to="/"
+            className="text-2xl font-mono font-bold text-white hover:text-cyan-400 transition-colors"
+            onClick={handleClose}
+          >
+            Mridul
+          </Link>
+        </motion.div>
 
-        <ul className="hidden md:flex ml-auto space-x-8">
+        <motion.ul
+          className="hidden md:flex ml-auto space-x-8"
+          initial="hidden"
+          animate="visible"
+          variants={listVariants}
+        >
           {NAV_LINKS.map(({ label, path }) => {
             const isActive = pathname === path;
             return (
-              <li key={path} className="relative">
+              <motion.li
+                key={path}
+                className="relative"
+                variants={itemVariants}
+              >
                 <Link
                   to={path}
                   className={`font-medium transition-colors ${
@@ -46,51 +70,52 @@ export default function Navbar() {
                 >
                   {label}
                 </Link>
-                 {isActive && (
-                    <motion.div
-                      layoutId="nav-starline"
-                      className="absolute -bottom-0.5 left-0 w-full flex justify-between h-1 overflow-visible"
-                    >
-                      {/*
-                        Generate 10 tiny dots across the full width.
-                        Each dot is w-0.5 h-0.5 (≈2px), bg-cyan-300, and twinkles via opacity animation.
-                      */}
-                      {Array.from({ length: 20 }).map((_, i) => (
-                        <motion.span
-                          key={i}
-                          className="block w-[0.5px] h-[0.5px] bg-cyan-300 rounded-full"
-                          initial={{ opacity: 0.3, scale: 0.6 }}
-                          animate={{ opacity: [0.3, 1, 0.3], scale: [0.6, 1, 0.6] }}
-                          transition={{
-                            delay: i * 0.08,      // stagger each dot’s twinkle
-                            duration: 1,
-                            repeat: Infinity,
-                            repeatDelay: 0.5,
-                          }}
-                        />
-                      ))}
-                    </motion.div>
-                  )}
-              </li>
+
+                {isActive && (
+                  <motion.div
+                    layoutId="nav-starline"
+                    className="absolute -bottom-0.5 left-0 w-full flex justify-between h-1 overflow-visible"
+                  >
+                    {Array.from({ length: 20 }).map((_, i) => (
+                      <motion.span
+                        key={i}
+                        className="block w-[0.5px] h-[0.5px] bg-cyan-300 rounded-full"
+                        initial={{ opacity: 0.3, scale: 0.6, rotate: 0 }}
+                        animate={{
+                          opacity: [0.3, 1, 0.3],
+                          scale: [0.6, 1, 0.6],
+                        }}
+                        transition={{
+                          delay: i * 0.08,
+                          duration: 1.5,
+                          repeat: Infinity,
+                          repeatType: 'loop'
+                        }}
+                      />
+                    ))}
+                  </motion.div>
+                )}
+              </motion.li>
             );
           })}
-        </ul>
+        </motion.ul>
 
-        <button
-          onClick={() => setMobileOpen((prev) => !prev)}
+        <motion.button
+          onClick={() => setMobileOpen(prev => !prev)}
           className="md:hidden ml-auto text-gray-200 hover:text-white focus:outline-none"
+          whileTap={{ rotate: 90 }}
         >
           {mobileOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-        </button>
+        </motion.button>
       </div>
 
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.2 }}
+            exit={{ opacity: 0, y: -100 }}
+            transition={{ type: 'spring', damping: 20, stiffness: 200 }}
             className="md:hidden bg-black/90 backdrop-blur-md"
           >
             <ul className="flex flex-col px-6 py-8 space-y-6">
