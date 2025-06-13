@@ -323,7 +323,21 @@ export default function Home() {
         </motion.div>
 
         <TestimonialsCarousel />
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mt-8 max-w-xl mx-auto text-center"
+        >
+          <p className="text-sm text-gray-400 italic tracking-wide">
+            *Testimonials shown are based on actual emails, feedback, and collaborations received across GitHub, LinkedIn, and email.
+          </p>
+        </motion.div>
       </section>
+
+
     </div>
   );
 }

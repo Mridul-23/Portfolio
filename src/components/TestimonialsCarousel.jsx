@@ -3,20 +3,20 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 const testimonials = [
   {
-    name: 'Alice Johnson',
-    role: 'Lead PM at TechCorp',
-    text: '“Mridul delivered an outstanding recommender system on time. His code quality and communication were top‐notch.”',
+    name: '飘 (Piao)',
+    role: 'ML Enthusiast from China',
+    text: '“I stumbled upon Mridul’s recommender system while researching feedback-driven agents. It was refreshingly well thought-out compared to most GitHub projects I’d seen. Looking forward to building on it.”',
   },
   {
-    name: 'Ravi Kumar',
-    role: 'Founder, EduLearn',
-    text: '“The AI Sign Language App is a game‐changer. Mridul’s ability to integrate ML into an intuitive UI is impressive.”',
+    name: 'Komal Preet Choudhary',
+    role: 'B.Tech CSE Student, CGC Landran',
+    text: '“I was genuinely impressed by Mridul’s AniSpider project. I reached out to understand how he built it, and his knowledge of web scraping blew me away.”',
   },
   {
-    name: 'Sara Lee',
-    role: 'CTO at DataWave',
-    text: '“Working with Mridul was seamless. His full‐stack expertise and attention to detail brought our vision to life.”',
-  },
+    name: 'Dr. Vandana Sharma',
+    role: 'Assistant Professor, CGC Landran',
+    text: '“Mridul’s SignSpeak project stood out for its social impact and technical depth. We proudly showcased it on Science Day 2025. His work reflects both innovation and empathy.”',
+  }
 ];
 
 export default function TestimonialsCarousel() {
