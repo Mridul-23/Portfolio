@@ -10,7 +10,6 @@ const NAV_LINKS = [
   { label: 'Tech', path: '/tech-stack' },
   { label: 'Certs', path: '/certifications' },
   { label: 'Social', path: '/social' },
-  { label: 'Contact', path: '/contact' },
 ];
 
 const listVariants = {
@@ -31,7 +30,7 @@ export default function Navbar() {
   const handleClose = () => setMobileOpen(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50">
+    <nav className="fixed top-0 left-0 w-full z-50 glass-panel border-b border-white/10">
       <div className="px-6 md:px-8 h-16 flex items-center">
         <motion.div
           whileHover={{ scale: 1.1, rotate: -1 }}
