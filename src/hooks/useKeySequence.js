@@ -1,4 +1,3 @@
-// src/hooks/useKeySequence.js
 import { useEffect, useRef } from 'react';
 
 export default function useKeySequence(sequences = []) {
@@ -14,11 +13,10 @@ export default function useKeySequence(sequences = []) {
           buffer.slice(-sequence.length).join(',') === sequence.join(',')
         ) {
           onMatch();
-          inputBuffer.current = []; 
+          inputBuffer.current = [];
         }
       });
 
-      // Unmount shortcut handling
       if (['Escape', 'Backspace', 'Delete'].includes(e.code)) {
         sequences.forEach(({ onCancel }) => {
           if (typeof onCancel === 'function') onCancel();
@@ -28,6 +26,8 @@ export default function useKeySequence(sequences = []) {
     };
 
     window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
   }, [sequences]);
 }
