@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
 
-const ThemeContext = createContext();
+export const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState('light');
@@ -10,6 +10,8 @@ export function ThemeProvider({ children }) {
     if (saved) setTheme(saved);
     else if (window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
   }, []);
+
+  const [hideStars, setHideStars] = useState(false);
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', theme === 'dark');
@@ -21,7 +23,7 @@ export function ThemeProvider({ children }) {
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme, hideStars, setHideStars }}>
       {children}
     </ThemeContext.Provider>
   );
