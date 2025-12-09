@@ -35,8 +35,6 @@ const DefaultHelmet = () => {
 
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
 
-      <meta name="google-site-verification" content="jKeJEWRfbgbxvp3nowXYd6NeKtV419UFmgcAIb9xgv0" />
-
       <title>Mridul Narula | AI Engineer & Full Stack Developer</title>
       <meta name="description" content="Portfolio of Mridul Narula, a B.Tech CSE student specializing in Artificial Intelligence, Deep Learning, and Modern Web Development. Explore projects like Ani-verse, ThoughtNet, and more." />
       <meta name="keywords" content="Mridul Narula, AI Engineer, Machine Learning, Full Stack Developer, React, Django, Deep Learning, Portfolio" />
