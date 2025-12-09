@@ -18,14 +18,15 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Wrapper />}>
           <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/tech-stack" element={<TechStack />} />
-          <Route path="/certifications" element={<Certifications />} />
-          <Route path="/social" element={<Social />} />
+          <Route path="about" element={<About />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="tech-stack" element={<TechStack />} />
+          <Route path="certifications" element={<Certifications />} />
+          <Route path="social" element={<Social />} />
         </Route>
+
         {/* Redirect old routes or unknown */}
-        <Route path="/home" element={<Navigate to="/" replace />} />
+        <Route path="home" element={<Navigate to="/" replace />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
