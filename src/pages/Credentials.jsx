@@ -20,7 +20,7 @@ import awsTrainingBadge from "../assets/badges/aws-training.png";
 import claudeBadge from "../assets/badges/claude-cca-f.png";
 import claude101Certificate from "../assets/badges/claude-101.png";
 
-import "./credentials.css";
+import "./Credentials.css";
 
 /* ───────────────────────── FEATURED ───────────────────────── */
 
