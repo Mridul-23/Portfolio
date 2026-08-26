@@ -1,0 +1,104 @@
+[
+  {
+    "id": "anirec-anirec-w",
+    "source": "anirec",
+    "target": "anirec-w",
+    "type": "web-evolution",
+    "label": "Web evolution"
+  },
+  {
+    "id": "anirec-w-ani-verse",
+    "source": "anirec-w",
+    "target": "ani-verse",
+    "type": "evolution",
+    "label": "Evolved into"
+  },
+
+  {
+    "id": "ani-spider-anime-archive",
+    "source": "ani-spider",
+    "target": "anime-archive",
+    "type": "data-pipeline",
+    "label": "Data pipeline"
+  },
+  {
+    "id": "anime-archive-anirec",
+    "source": "anime-archive",
+    "target": "anirec",
+    "type": "dataset",
+    "label": "Dataset"
+  },
+  {
+    "id": "anime-archive-anirec-w",
+    "source": "anime-archive",
+    "target": "anirec-w",
+    "type": "dataset",
+    "label": "Dataset"
+  },
+  {
+    "id": "anime-archive-ani-verse-v1",
+    "source": "anime-archive",
+    "target": "ani-verse-v1",
+    "type": "dataset",
+    "label": "Dataset"
+  },
+  {
+    "id": "ani-verse-v1-ani-verse",
+    "source": "ani-verse-v1",
+    "target": "ani-verse",
+    "type": "release-evolution",
+    "label": "Current release"
+  },
+
+  {
+    "id": "eka-v1-eka-v2",
+    "source": "eka-v1",
+    "target": "eka-v2",
+    "type": "release-evolution",
+    "label": "Release evolution"
+  },
+  {
+    "id": "eka-v2-eka",
+    "source": "eka-v2",
+    "target": "eka",
+    "type": "release-evolution",
+    "label": "Current release"
+  },
+  {
+    "id": "mini-langgraph-eka-v2",
+    "source": "mini-langgraph-agents",
+    "target": "eka-v2",
+    "type": "architectural-influence",
+    "label": "Architectural influence"
+  },
+
+  {
+    "id": "thoughtnet-v1-v2",
+    "source": "thoughtnet-v1",
+    "target": "thoughtnet-v2",
+    "type": "release-evolution",
+    "label": "Release evolution"
+  },
+  {
+    "id": "thoughtnet-v2-thoughtnet",
+    "source": "thoughtnet-v2",
+    "target": "thoughtnet",
+    "type": "release-evolution",
+    "label": "Current release"
+  },
+
+  {
+    "id": "signspeak-model-25-model-60-plus",
+    "source": "signspeak-model-25",
+    "target": "signspeak-model-60-plus",
+    "type": "model-evolution",
+    "label": "Model evolution"
+  },
+  {
+    "id": "signspeak-model-60-plus-signspeak",
+    "source": "signspeak-model-60-plus",
+    "target": "signspeak",
+    "type": "model-evolution",
+    "label": "Current model"
+  }
+]

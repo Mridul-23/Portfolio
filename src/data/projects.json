@@ -1,0 +1,692 @@
+[
+  {
+    "id": "eka",
+    "type": "project",
+    "name": "Enterprise Knowledge Assistant",
+    "shortName": "EKA",
+    "status": "active",
+    "statusLabel": "Active Maintenance",
+    "category": [
+      "AI/ML",
+      "GenAI",
+      "RAG",
+      "LLM Applications"
+    ],
+    "description": "A RAG-powered conversational assistant for enterprise documentation that retrieves relevant information and generates grounded, source-attributed responses.",
+    "highlights": [
+      "Semantic retrieval over enterprise documentation",
+      "LangChain + LangGraph RAG workflow",
+      "Persistent Chroma vector database",
+      "Local HuggingFace embeddings",
+      "Gemini-powered grounded responses",
+      "Conversational state with LangGraph MemorySaver",
+      "Source attribution and clickable citations",
+      "Scrapy + BeautifulSoup documentation ingestion"
+    ],
+    "metrics": [
+      {
+        "label": "Documents Indexed",
+        "value": "851"
+      },
+      {
+        "label": "Chunks",
+        "value": "6,187"
+      }
+    ],
+    "techStack": [
+      "Python",
+      "Flask",
+      "LangChain",
+      "LangGraph",
+      "Chroma",
+      "HuggingFace",
+      "Gemini",
+      "Scrapy",
+      "BeautifulSoup"
+    ],
+    "releases": [
+      {
+        "id": "eka-v1",
+        "tag": "v1.0.0",
+        "type": "release",
+        "current": false,
+        "description": "Initial stable release focused on understanding RAG fundamentals.",
+        "highlights": [
+          "Manual RAG pipeline",
+          "FAISS vector search",
+          "SentenceTransformers embeddings",
+          "OpenRouter LLMs",
+          "Flask REST API and web chat interface"
+        ]
+      },
+      {
+        "id": "eka-v2",
+        "tag": "v2.0.0",
+        "type": "release",
+        "current": true,
+        "description": "Re-architected from a manually implemented RAG pipeline into a LangChain + LangGraph application.",
+        "highlights": [
+          "Migrated from FAISS + SentenceTransformers to Chroma + local HuggingFace embeddings",
+          "LangChain + LangGraph retrieval workflow",
+          "Conversational state with MemorySaver",
+          "Source attribution and clickable citations",
+          "Chroma vector-store indexing pipeline",
+          "Simplified backend and frontend architecture"
+        ]
+      }
+    ],
+    "assets": {
+      "preview": "./src/assets/gallery/eka/preview.png",
+      "gallery": [
+        "./src/assets/gallery/eka/1.png",
+        "./src/assets/gallery/eka/architecture.svg"
+      ]
+    },
+    "links": {
+      "github": "https://github.com/Mridul-23/enterprise-knowledge-assistant"
+    },
+    "license": "MIT"
+  },
+  {
+    "id": "mini-langgraph-agents",
+    "type": "project",
+    "name": "mini-langgraph-agents",
+    "shortName": "Mini LangGraph Agents",
+    "status": "inactive",
+    "statusLabel": "Archived",
+    "category": [
+      "AI/ML",
+      "Agents",
+      "LangGraph"
+    ],
+    "description": "A collection of small LangGraph agents exploring tool calling, memory, RAG, and agent workflows.",
+    "highlights": [
+      "RAG agent",
+      "Memory agent",
+      "Tool calling",
+      "Agent workflows"
+    ],
+    "techStack": [
+      "Python",
+      "LangGraph"
+    ],
+    "releases": [],
+    "assets": {
+      "preview": null,
+      "gallery": []
+    },
+    "links": {
+      "github": "https://github.com/Mridul-23/mini-langgraph-agents"
+    }
+  },
+  {
+    "id": "ani-verse",
+    "type": "project",
+    "name": "Ani-verse",
+    "shortName": "Ani-verse",
+    "status": "active",
+    "statusLabel": "Deployed",
+    "category": [
+      "AI/ML",
+      "Recommendation Systems",
+      "Full Stack"
+    ],
+    "description": "A production-grade full-stack anime recommendation platform combining BERT embeddings, FAISS vector search, and a LinUCB contextual bandit for adaptive personalization.",
+    "highlights": [
+      "BERT-powered semantic recommendations",
+      "FAISS vector similarity search",
+      "LinUCB contextual bandit personalization",
+      "JWT authentication",
+      "Favorites and watchlists",
+      "Anime discovery and related-title exploration"
+    ],
+    "metrics": [
+      {
+        "label": "Anime records",
+        "value": "14,000+"
+      }
+    ],
+    "techStack": [
+      "React",
+      "TailwindCSS",
+      "Django",
+      "Django REST Framework",
+      "BERT",
+      "FAISS",
+      "LinUCB",
+      "PostgreSQL",
+      "Supabase",
+      "Cloudinary"
+    ],
+    "releases": [
+      {
+        "id": "ani-verse-v1",
+        "tag": "v1.0.0",
+        "type": "release",
+        "current": true,
+        "description": "The first officially versioned stable release of Ani-verse.",
+        "highlights": [
+          "Semantic recommendations powered by BERT embeddings",
+          "FAISS vector similarity search",
+          "LinUCB contextual bandit",
+          "JWT-based authentication",
+          "Favorites and watchlist",
+          "React frontend with Django REST Framework backend",
+          "Production deployment"
+        ]
+      }
+    ],
+    "assets": {
+      "preview": "./src/assets/gallery/ani-verse/preview.png",
+      "gallery": [
+          "./src/assets/gallery/ani-verse/1.png",
+          "./src/assets/gallery/ani-verse/2.png",
+          "./src/assets/gallery/ani-verse/3.png",
+          "./src/assets/gallery/ani-verse/4.png",
+          "./src/assets/gallery/ani-verse/5.png",
+          "./src/assets/gallery/ani-verse/6.png",
+          "./src/assets/gallery/ani-verse/7.png",
+          "./src/assets/gallery/ani-verse/8.png"
+        ]
+    },
+    "links": {
+      "github": "https://github.com/Mridul-23/ani-verse",
+      "live": "https://ani-verse-amber.vercel.app/"
+    },
+    "license": "MIT"
+  },
+  {
+    "id": "thoughtnet",
+    "type": "project",
+    "name": "ThoughtNet",
+    "shortName": "ThoughtNet",
+    "status": "active",
+    "statusLabel": "In Research",
+    "category": [
+      "AI/ML",
+      "NLP",
+      "Semantic Exploration",
+      "Visualization"
+    ],
+    "description": "An experimental semantic exploration system that decomposes questions, aggregates related sentences from multiple sources, clusters ideas using neural embeddings, and presents them as an interactive thought graph.",
+    "highlights": [
+      "Query decomposition",
+      "Multi-source asynchronous aggregation",
+      "Sentence-level embeddings",
+      "KMeans / DBSCAN clustering",
+      "Interactive force-directed graph",
+      "Source transparency",
+      "Graph JSON export",
+      "Visual snapshot export"
+    ],
+    "techStack": [
+      "Python",
+      "Django REST Framework",
+      "Asyncio",
+      "SentenceTransformers",
+      "scikit-learn",
+      "NumPy",
+      "HTTPX",
+      "AsyncPRAW",
+      "React",
+      "TailwindCSS",
+      "React Force Graph"
+    ],
+    "releases": [
+      {
+        "id": "thoughtnet-v1",
+        "tag": "v1.0",
+        "type": "tag",
+        "current": false,
+        "description": "MVP focused on validating the initial ThoughtNet pipeline.",
+        "highlights": [
+          "Backend pipeline",
+          "API endpoints",
+          "Clustering",
+          "Placeholder UI"
+        ]
+      },
+      {
+        "id": "thoughtnet-v2",
+        "tag": "v2.0",
+        "type": "tag",
+        "current": true,
+        "description": "Major evolution from the initial MVP toward semantic processing, asynchronous aggregation, and interactive graph-based exploration.",
+        "highlights": [
+          "Sentence-level semantic processing",
+          "Asynchronous backend pipeline",
+          "Graph-based API output",
+          "Interactive exploration UI",
+          "Multi-page frontend"
+        ]
+      }
+    ],
+    "assets": {
+      "preview": "./src/assets/gallery/thoughtnet/preview.png",
+      "gallery": [
+        "./src/assets/gallery/thoughtnet/1.png",
+        "./src/assets/gallery/thoughtnet/2.png",
+        "./src/assets/gallery/thoughtnet/3.png",
+        "./src/assets/gallery/thoughtnet/4.png",
+        "./src/assets/gallery/thoughtnet/5.png",
+        "./src/assets/gallery/thoughtnet/6.png"
+      ]
+    },
+    "links": {
+      "github": "https://github.com/Mridul-23/ThoughtNet"
+    },
+    "license": "MIT"
+  },
+  {
+    "id": "anirec",
+    "type": "project",
+    "name": "ANIREC",
+    "shortName": "AniRec",
+    "status": "inactive",
+    "statusLabel": "Archived",
+    "category": [
+      "Recommendation Systems",
+      "NLP",
+      "Machine Learning"
+    ],
+    "description": "A hybrid anime recommender system combining content-based similarity with a multi-armed bandit approach to refine recommendations through interaction.",
+    "highlights": [
+      "Word2Vec embeddings",
+      "Cosine similarity matrix",
+      "Content-based filtering",
+      "Hybrid recommendation approach",
+      "UCB multi-armed bandit",
+      "Command-line interface"
+    ],
+    "techStack": [
+      "Python",
+      "Word2Vec",
+      "Cosine Similarity",
+      "UCB",
+      "Jupyter"
+    ],
+    "releases": [],
+    "assets": {
+      "preview": "./src/assets/gallery/anirec/preview.png",
+      "gallery": [
+        "./src/assets/gallery/anirec/1.png",
+        "./src/assets/gallery/anirec/2.png"
+      ]
+    },
+    "links": {
+      "github": "https://github.com/Mridul-23/Anirec"
+    },
+    "license": "MIT"
+  },
+  {
+    "id": "anirec-w",
+    "type": "project",
+    "name": "ANIREC Web",
+    "shortName": "AniRec-W",
+    "status": "inactive",
+    "statusLabel": "Not Maintained",
+    "category": [
+      "Full Stack",
+      "Web Application",
+      "Recommendation Systems",
+      "Machine Learning"
+    ],
+    "description": "A Django server-side rendered anime discovery and personalized recommendation platform evolved from the original ANIREC system.",
+    "highlights": [
+      "Anime discovery and search",
+      "Anime detail pages",
+      "Similar-anime recommendations",
+      "UCB multi-armed bandit personalization",
+      "User accounts",
+      "Favorites and dashboard",
+      "Interactive recommendation workflow"
+    ],
+    "techStack": [
+      "Django",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Similarity Matrix",
+      "UCB"
+    ],
+    "releases": [],
+    "assets": {
+      "preview": "./src/assets/gallery/anirec-w/preview.png",
+      "gallery": [
+        "./src/assets/gallery/anirec-w/1.png",
+        "./src/assets/gallery/anirec-w/2.png",
+        "./src/assets/gallery/anirec-w/3.png",
+        "./src/assets/gallery/anirec-w/4.png"
+      ]
+    },
+    "links": {
+      "github": "https://github.com/Mridul-23/Anirec_w"
+    },
+    "license": "MIT"
+  },
+  {
+    "id": "ani-spider",
+    "type": "project",
+    "name": "Ani-Spider",
+    "shortName": "Ani-Spider",
+    "status": "inactive",
+    "statusLabel": "Archived",
+    "category": [
+      "Data Engineering",
+      "Web Scraping",
+      "Automation"
+    ],
+    "description": "A Scrapy-based web scraping tool designed to collect anime metadata and image links from MyAnimeList.",
+    "highlights": [
+      "Anime metadata and statistics crawler",
+      "Anime image-link crawler",
+      "Configurable scraping",
+      "Extensible spider architecture",
+      "Data-cleaning pipeline"
+    ],
+    "techStack": [
+      "Python",
+      "Scrapy"
+    ],
+    "releases": [],
+    "assets": {
+      "preview": ["./src/assets/gallery/ani-spider/preview.png"],
+      "gallery": [
+        "./src/assets/gallery/ani-spider/1.png",
+        "./src/assets/gallery/ani-spider/2.png",
+        "./src/assets/gallery/ani-spider/3.png"
+      ]
+    },
+    "links": {
+      "github": "https://github.com/Mridul-23/Ani-Spider"
+    },
+    "license": "MIT"
+  },
+  {
+    "id": "anime-archive",
+    "type": "artifact",
+    "artifactType": "dataset",
+    "name": "Anime Archive",
+    "canonicalName": "Anime Comprehensive Dataset",
+    "status": "published",
+    "statusLabel": "Published Dataset",
+    "category": [
+      "Dataset",
+      "Data Analytics",
+      "Deep Learning",
+      "Recommendation Systems"
+    ],
+    "description": "A published anime dataset on Kaggle containing 25,000+ anime titles and multiple prepared data files.",
+    "metrics": [
+      {
+        "label": "Anime titles",
+        "value": "25,000+"
+      },
+      {
+        "label": "Platform",
+        "value": "Kaggle"
+      }
+    ],
+    "contents": [
+      "ani_data.json",
+      "ani_data_full.json",
+      "ani_data_full.json",
+      "ani_img.json",
+      "preprocessed_ani_data.csv"
+    ],
+    "assets": {
+      "preview": "./src/assets/gallery/anime-archive/preview.png",
+      "gallery": []
+    },
+    "links": {
+      "kaggle": "https://www.kaggle.com/datasets/mridulnarula/anime-comprehensive-dataset"
+    },
+    "license": "Apache 2.0"
+  },
+  {
+    "id": "signspeak",
+    "type": "project",
+    "name": "SignSpeak",
+    "shortName": "SignSpeak",
+    "status": "active",
+    "statusLabel": "In Development",
+    "category": [
+      "AI/ML",
+      "Computer Vision",
+      "Accessibility",
+      "Desktop Application"
+    ],
+    "description": "AI-powered Indian Sign Language translation system using time-series classification models to translate gestures into spoken language.",
+    "highlights": [
+      "Real-time ISL gesture-to-text translation through a Tkinter interface",
+      "LSTM-based time-series classification",
+      "Built on a 27-word and phrase subset of the INCLUDE 50 dataset",
+      "Designed around low-cost hardware requirements"
+    ],
+    "metrics": [
+      {
+        "label": "Top Accuracy",
+        "value": "60%+"
+      },
+      {
+        "label": "ISL Classes",
+        "value": "27"
+      }
+    ],
+    "techStack": [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "LSTM",
+      "Tkinter",
+      "Jupyter"
+    ],
+    "releases": [
+      {
+        "id": "signspeak-model-25",
+        "tag": "25% Accuracy Model",
+        "type": "model",
+        "current": false,
+        "description": "Initial SignSpeak model achieving approximately 25% accuracy.",
+        "highlights": [
+          "Initial trained model",
+          "Baseline for subsequent model improvements"
+        ]
+      },
+      {
+        "id": "signspeak-model-60-plus",
+        "tag": "60%+ Accuracy Model",
+        "type": "model",
+        "current": true,
+        "description": "Improved LSTM-based model achieving over 60% accuracy.",
+        "highlights": [
+          "Improved model accuracy",
+          "Current model version"
+        ]
+      }
+    ],
+    "assets": {
+      "preview": null,
+      "gallery": []
+    },
+    "links": {
+      "github": "https://github.com/Mridul-23/SignSpeak"
+    },
+    "license": "MIT"
+  },
+  {
+    "id": "prolearn",
+    "type": "project",
+    "name": "ProLearn",
+    "shortName": "ProLearn",
+    "status": "active",
+    "statusLabel": "Active Maintenance",
+    "category": [
+      "AI/ML",
+      "Full Stack",
+      "Education"
+    ],
+    "description": "Full-stack learning companion for organizing study plans, saving learning resources, tracking progress, and getting help from an AI tutor.",
+    "highlights": [
+      "Personal study plans with generated learning steps",
+      "AI tutor with OpenRouter integration and built-in fallback guidance",
+      "Resource discovery through YouTube and Medium search endpoints",
+      "Dashboard with focus, goals, XP, and learning-level tracking",
+      "JWT-protected user accounts and personal learning data"
+    ],
+    "metrics": [],
+    "techStack": [
+      "React",
+      "React Router",
+      "Axios",
+      "Tailwind CSS",
+      "Chart.js",
+      "Django",
+      "Django REST Framework",
+      "Simple JWT",
+      "SQLite",
+      "OpenRouter"
+    ],
+    "releases": [],
+    "assets": {
+      "preview": "./src/assets/gallery/prolearn/preview.png",
+      "gallery": [
+        "./src/assets/gallery/prolearn/1.png",
+        "./src/assets/gallery/prolearn/2.png",
+        "./src/assets/gallery/prolearn/3.png",
+        "./src/assets/gallery/prolearn/4.png",
+        "./src/assets/gallery/prolearn/5.png",
+        "./src/assets/gallery/prolearn/6.png",
+        "./src/assets/gallery/prolearn/7.png",
+        "./src/assets/gallery/prolearn/8.png",
+        "./src/assets/gallery/prolearn/9.png"
+      ]
+    },
+    "links": {
+      "github": "https://github.com/Mridul-23/ProLearn"
+    },
+    "license": "MIT"
+  },
+  {
+    "id": "amaze",
+    "type": "project",
+    "name": "Amaze",
+    "shortName": "Amaze",
+    "status": "inactive",
+    "statusLabel": "Archived",
+    "category": [
+      "Web Scraping",
+      "Automation",
+      "Backend"
+    ],
+    "description": "Dynamic web scraping tool built with Scrapy and Selenium for extracting content from modern websites with lazy-loaded and dynamically rendered content.",
+    "highlights": [
+      "Dynamic web scraping using Selenium WebDriver with ChromeDriver",
+      "Handles lazy-loaded content and dynamically rendered pages",
+      "Custom ScrapeOps fake header middleware for rotating request headers",
+      "Uses Scrapy spiders, item pipelines, and custom middleware"
+    ],
+    "metrics": [],
+    "techStack": [
+      "Python",
+      "Scrapy",
+      "Selenium",
+      "ChromeDriver",
+      "ScrapeOps"
+    ],
+    "releases": [],
+    "assets": {
+      "preview": null,
+      "gallery": []
+    },
+    "links": {
+      "github": "https://github.com/Mridul-23/amaze"
+    },
+    "license": "MIT"
+  },
+  {
+    "id": "sweet-shop-kata",
+    "type": "project",
+    "name": "Sweet Shop Management System",
+    "shortName": "Sweet Shop",
+    "status": "inactive",
+    "statusLabel": "Not Maintained",
+    "category": [
+      "Full Stack",
+      "Web Application"
+    ],
+    "description": "Full-stack sweet shop management system for inventory, purchases, authentication, role-based access, and administration.",
+    "highlights": [
+      "JWT-based authentication with protected API access",
+      "Role-based inventory and administration workflows",
+      "Purchase and restock operations with stock validation",
+      "Search and management of sweets by name or category",
+      "React SPA with a dedicated admin dashboard"
+    ],
+    "metrics": [],
+    "techStack": [
+      "Django",
+      "Django REST Framework",
+      "React",
+      "Vite",
+      "TailwindCSS",
+      "Simple JWT",
+      "SQLite",
+      "Fetch API"
+    ],
+    "releases": [],
+    "assets": {
+      "preview": "./src/assets/gallery/sweet-shop-kata/preview.png",
+      "gallery": [
+        "./src/assets/gallery/sweet-shop-kata/1.png",
+        "./src/assets/gallery/sweet-shop-kata/2.png"
+      ]
+    },
+    "links": {
+      "github": "https://github.com/Mridul-23/sweet-shop-kata"
+    },
+    "license": ""
+  },
+  {
+    "id": "myutility-django-project",
+    "type": "project",
+    "name": "MyUtility",
+    "shortName": "MyUtility",
+    "status": "inactive",
+    "statusLabel": "Not Maintained",
+    "category": [
+      "Web Application",
+      "Backend",
+      "Productivity"
+    ],
+    "description": "Django-based productivity web application combining a to-do list, notes, calculator, and weather utilities in a single platform.",
+    "highlights": [
+      "Integrated four utility applications within a single Django platform",
+      "Task management with add, edit, and delete operations",
+      "Notes management with dedicated content preview",
+      "Weather lookup for current weather information by city",
+      "Django admin interface with superuser access"
+    ],
+    "metrics": [],
+    "techStack": [
+      "Python",
+      "Django"
+    ],
+    "releases": [],
+    "assets": {
+      "preview": "./src/assets/gallery/myutility-django-project/preview.png",
+      "gallery": [
+        "./src/assets/gallery/myutility-django-project/1.png",
+        "./src/assets/gallery/myutility-django-project/2.png",
+        "./src/assets/gallery/myutility-django-project/3.png",
+        "./src/assets/gallery/myutility-django-project/4.png",
+        "./src/assets/gallery/myutility-django-project/5.png",
+        "./src/assets/gallery/myutility-django-project/6.png"
+      ]
+    },
+    "links": {
+      "github": "https://github.com/Mridul-23/MyUtility-Django-Project"
+    },
+    "license": "MIT"
+  }
+]
