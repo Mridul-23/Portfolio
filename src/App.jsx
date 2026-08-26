@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
 import TechStack from './pages/TechStack';
-import Certifications from './pages/Certifications';
+import Certifications from './pages/Credentials';
 import Social from './pages/Social';
 import NotFound from './pages/NotFound';
 import Wrapper from './components/Wrapper';
@@ -21,7 +21,7 @@ export default function App() {
           <Route path="about" element={<About />} />
           <Route path="projects" element={<Projects />} />
           <Route path="tech-stack" element={<TechStack />} />
-          <Route path="certifications" element={<Certifications />} />
+          <Route path="credentials" element={<Certifications />} />
           <Route path="social" element={<Social />} />
         </Route>
 

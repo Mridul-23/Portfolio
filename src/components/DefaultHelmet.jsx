@@ -1,6 +1,3 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-
 const DefaultHelmet = () => {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -15,7 +12,7 @@ const DefaultHelmet = () => {
           "https://github.com/Mridul-23",
           "https://twitter.com/mridulnarula_"
         ],
-        "jobTitle": "AI Engineer & Full Stack Developer",
+        "jobTitle": "Software Engineer | AI, Cloud & Full Stack",
         "image": "https://mridul-narula.vercel.app/preview.png"
       },
       {
@@ -29,10 +26,9 @@ const DefaultHelmet = () => {
   };
 
   return (
-    <Helmet>
-      <html lang="en" />
-      <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
-    </Helmet>
+    <script type="application/ld+json">
+      {JSON.stringify(jsonLd)}
+    </script>
   );
 };
 

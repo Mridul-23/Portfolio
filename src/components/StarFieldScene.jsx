@@ -1,7 +1,23 @@
-import React, { useRef, memo } from 'react';
+import React, { useRef, memo, Component } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Stars } from '@react-three/drei';
 
+class CanvasErrorBoundary extends Component {
+  state = { hasError: false };
+
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error) {
+    console.warn("StarFieldScene: Three.js/Canvas failed to render (likely WebGL unsupported or context lost).", error);
+  }
+
+  render() {
+    if (this.state.hasError) return null;
+    return this.props.children;
+  }
+}
 
 const RotatingStars = memo(function RotatingStars() {
   const starsGroup = useRef();
@@ -36,17 +52,19 @@ RotatingStars.displayName = 'RotatingStars';
 
 export default function StarFieldScene() {
   return (
-    <div className="fixed inset-0 z-0 pointer-events-none">
-      <Canvas
-        dpr={[1, 1.5]}
-        gl={{ antialias: false, powerPreference: 'low-power' }}
-        camera={{ position: [0, 0, 5] }}
-        className='pointer-events-none'
-      >
-        <ambientLight intensity={0.3} />
-        <pointLight position={[5, 5, 5]} intensity={0.7} />
-        <RotatingStars />
-      </Canvas>
-    </div>
+    <CanvasErrorBoundary>
+      <div className="fixed inset-0 z-0 pointer-events-none">
+        <Canvas
+          dpr={[1, 1.5]}
+          gl={{ antialias: false, powerPreference: 'low-power' }}
+          camera={{ position: [0, 0, 5] }}
+          className='pointer-events-none'
+        >
+          <ambientLight intensity={0.3} />
+          <pointLight position={[5, 5, 5]} intensity={0.7} />
+          <RotatingStars />
+        </Canvas>
+      </div>
+    </CanvasErrorBoundary>
   );
 }

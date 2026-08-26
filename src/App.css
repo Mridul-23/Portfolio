@@ -30,3 +30,85 @@ body::-webkit-scrollbar {
 .animate-slide-in {
   animation: slide-in 0.3s ease-out forwards;
 }
+
+/* --------------------------------------------------------------------------
+   Static project relationship layer
+   -------------------------------------------------------------------------- */
+
+.edge {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+   
+.edge-evolution {
+  stroke: #38bdf8;
+  stroke-width: 2;
+  stroke-dasharray: 7 6;
+  animation: edge-flow 1.6s linear infinite;
+}
+
+.edge-web-evolution {
+  stroke: #22d3ee;
+  stroke-width: 2;
+  stroke-dasharray: 7 6;
+  animation: edge-flow 1.6s linear infinite;
+}
+
+.edge-release-evolution {
+  stroke: #a78bfa;
+  stroke-width: 1.8;
+  stroke-dasharray: 7 6;
+  animation: edge-flow 1.8s linear infinite;
+}
+
+.edge-model-evolution {
+  stroke: #a78bfa;
+  stroke-width: 1.8;
+  stroke-dasharray: 7 6;
+  animation: edge-flow 1.8s linear infinite;
+}
+
+.edge-data-pipeline {
+  stroke: #34d399;
+  stroke-width: 2;
+  stroke-dasharray: 8 6;
+  animation: edge-flow 1.2s linear infinite;
+}
+
+.edge-dataset {
+  stroke: #34d399;
+  stroke-width: 1.7;
+  stroke-dasharray: 7 6;
+  animation: edge-flow 1.4s linear infinite;
+}
+
+.edge-architectural-influence {
+  stroke: #f59e0b;
+  stroke-width: 1.8;
+  stroke-dasharray: 4 6;
+  animation: edge-flow 2s linear infinite;
+}
+
+@keyframes edge-flow {
+  to {
+    stroke-dashoffset: -26;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .edge {
+    animation: none;
+  }
+}
+
+
+.detail-label {
+  font-size: 9px;
+  line-height: 1;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: rgb(100 116 139);
+}
