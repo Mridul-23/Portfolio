@@ -76,10 +76,10 @@
       }
     ],
     "assets": {
-      "preview": "./src/assets/gallery/eka/preview.png",
+      "preview": "/gallery/eka/preview.png",
       "gallery": [
-        "./src/assets/gallery/eka/1.png",
-        "./src/assets/gallery/eka/architecture.svg"
+        "/gallery/eka/1.png",
+        "/gallery/eka/architecture.svg"
       ]
     },
     "links": {
@@ -177,16 +177,16 @@
       }
     ],
     "assets": {
-      "preview": "./src/assets/gallery/ani-verse/preview.png",
+      "preview": "/gallery/ani-verse/preview.png",
       "gallery": [
-          "./src/assets/gallery/ani-verse/1.png",
-          "./src/assets/gallery/ani-verse/2.png",
-          "./src/assets/gallery/ani-verse/3.png",
-          "./src/assets/gallery/ani-verse/4.png",
-          "./src/assets/gallery/ani-verse/5.png",
-          "./src/assets/gallery/ani-verse/6.png",
-          "./src/assets/gallery/ani-verse/7.png",
-          "./src/assets/gallery/ani-verse/8.png"
+          "/gallery/ani-verse/1.png",
+          "/gallery/ani-verse/2.png",
+          "/gallery/ani-verse/3.png",
+          "/gallery/ani-verse/4.png",
+          "/gallery/ani-verse/5.png",
+          "/gallery/ani-verse/6.png",
+          "/gallery/ani-verse/7.png",
+          "/gallery/ani-verse/8.png"
         ]
     },
     "links": {
@@ -262,14 +262,14 @@
       }
     ],
     "assets": {
-      "preview": "./src/assets/gallery/thoughtnet/preview.png",
+      "preview": "/gallery/thoughtnet/preview.png",
       "gallery": [
-        "./src/assets/gallery/thoughtnet/1.png",
-        "./src/assets/gallery/thoughtnet/2.png",
-        "./src/assets/gallery/thoughtnet/3.png",
-        "./src/assets/gallery/thoughtnet/4.png",
-        "./src/assets/gallery/thoughtnet/5.png",
-        "./src/assets/gallery/thoughtnet/6.png"
+        "/gallery/thoughtnet/1.png",
+        "/gallery/thoughtnet/2.png",
+        "/gallery/thoughtnet/3.png",
+        "/gallery/thoughtnet/4.png",
+        "/gallery/thoughtnet/5.png",
+        "/gallery/thoughtnet/6.png"
       ]
     },
     "links": {
@@ -307,10 +307,10 @@
     ],
     "releases": [],
     "assets": {
-      "preview": "./src/assets/gallery/anirec/preview.png",
+      "preview": "/gallery/anirec/preview.png",
       "gallery": [
-        "./src/assets/gallery/anirec/1.png",
-        "./src/assets/gallery/anirec/2.png"
+        "/gallery/anirec/1.png",
+        "/gallery/anirec/2.png"
       ]
     },
     "links": {
@@ -351,12 +351,12 @@
     ],
     "releases": [],
     "assets": {
-      "preview": "./src/assets/gallery/anirec-w/preview.png",
+      "preview": "/gallery/anirec-w/preview.png",
       "gallery": [
-        "./src/assets/gallery/anirec-w/1.png",
-        "./src/assets/gallery/anirec-w/2.png",
-        "./src/assets/gallery/anirec-w/3.png",
-        "./src/assets/gallery/anirec-w/4.png"
+        "/gallery/anirec-w/1.png",
+        "/gallery/anirec-w/2.png",
+        "/gallery/anirec-w/3.png",
+        "/gallery/anirec-w/4.png"
       ]
     },
     "links": {
@@ -390,11 +390,11 @@
     ],
     "releases": [],
     "assets": {
-      "preview": ["./src/assets/gallery/ani-spider/preview.png"],
+      "preview": ["/gallery/ani-spider/preview.png"],
       "gallery": [
-        "./src/assets/gallery/ani-spider/1.png",
-        "./src/assets/gallery/ani-spider/2.png",
-        "./src/assets/gallery/ani-spider/3.png"
+        "/gallery/ani-spider/1.png",
+        "/gallery/ani-spider/2.png",
+        "/gallery/ani-spider/3.png"
       ]
     },
     "links": {
@@ -435,7 +435,7 @@
       "preprocessed_ani_data.csv"
     ],
     "assets": {
-      "preview": "./src/assets/gallery/anime-archive/preview.png",
+      "preview": "/gallery/anime-archive/preview.png",
       "gallery": []
     },
     "links": {
@@ -549,17 +549,17 @@
     ],
     "releases": [],
     "assets": {
-      "preview": "./src/assets/gallery/prolearn/preview.png",
+      "preview": "/gallery/prolearn/preview.png",
       "gallery": [
-        "./src/assets/gallery/prolearn/1.png",
-        "./src/assets/gallery/prolearn/2.png",
-        "./src/assets/gallery/prolearn/3.png",
-        "./src/assets/gallery/prolearn/4.png",
-        "./src/assets/gallery/prolearn/5.png",
-        "./src/assets/gallery/prolearn/6.png",
-        "./src/assets/gallery/prolearn/7.png",
-        "./src/assets/gallery/prolearn/8.png",
-        "./src/assets/gallery/prolearn/9.png"
+        "/gallery/prolearn/1.png",
+        "/gallery/prolearn/2.png",
+        "/gallery/prolearn/3.png",
+        "/gallery/prolearn/4.png",
+        "/gallery/prolearn/5.png",
+        "/gallery/prolearn/6.png",
+        "/gallery/prolearn/7.png",
+        "/gallery/prolearn/8.png",
+        "/gallery/prolearn/9.png"
       ]
     },
     "links": {
@@ -636,10 +636,10 @@
     ],
     "releases": [],
     "assets": {
-      "preview": "./src/assets/gallery/sweet-shop-kata/preview.png",
+      "preview": "/gallery/sweet-shop-kata/preview.png",
       "gallery": [
-        "./src/assets/gallery/sweet-shop-kata/1.png",
-        "./src/assets/gallery/sweet-shop-kata/2.png"
+        "/gallery/sweet-shop-kata/1.png",
+        "/gallery/sweet-shop-kata/2.png"
       ]
     },
     "links": {
@@ -674,14 +674,14 @@
     ],
     "releases": [],
     "assets": {
-      "preview": "./src/assets/gallery/myutility-django-project/preview.png",
+      "preview": "/gallery/myutility-django-project/preview.png",
       "gallery": [
-        "./src/assets/gallery/myutility-django-project/1.png",
-        "./src/assets/gallery/myutility-django-project/2.png",
-        "./src/assets/gallery/myutility-django-project/3.png",
-        "./src/assets/gallery/myutility-django-project/4.png",
-        "./src/assets/gallery/myutility-django-project/5.png",
-        "./src/assets/gallery/myutility-django-project/6.png"
+        "/gallery/myutility-django-project/1.png",
+        "/gallery/myutility-django-project/2.png",
+        "/gallery/myutility-django-project/3.png",
+        "/gallery/myutility-django-project/4.png",
+        "/gallery/myutility-django-project/5.png",
+        "/gallery/myutility-django-project/6.png"
       ]
     },
     "links": {

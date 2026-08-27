@@ -29,8 +29,8 @@ import {
 import { FaXTwitter, FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 import profileImg from "../assets/profile.png";
-import aniverseImg from "../assets/gallery/ani-verse/preview.png";
-import ekaImg from "../assets/gallery/eka/preview.png";
+import aniverseImg from "/gallery/ani-verse/preview.png";
+import ekaImg from "/gallery/eka/preview.png";
 
 const BentoItem = ({ children, className = "", delay = 0, hover = true }) => (
   <motion.div
